@@ -1,7 +1,9 @@
 (function($) {
     $(function() {
+        //Initialize commands
         $('.parallax').parallax();
         $('.scrollspy').scrollSpy();
+
         var options = [{    // Animate skill bar on scroll down
             selector: '#skills',
             offset: 200,
@@ -28,6 +30,9 @@
             }
         }];
         Materialize.scrollFire(options);
+
+        Materialize.fadeInImage('#photo');  //Fade in profile photo
+        Materialize.showStaggeredList('#description') //Animate description
 
     }); // end of document ready
 })(jQuery); // end of jQuery name space
